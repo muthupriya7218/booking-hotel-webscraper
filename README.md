@@ -1,4 +1,4 @@
-# 🏨 Booking.com Web Scraper
+## 🏨 Booking.com Web Scraper
 
 A Python script that scrapes hotel data from Booking.com search results pages and saves the extracted information into a CSV file.
 
@@ -26,9 +26,10 @@ A Python script that scrapes hotel data from Booking.com search results pages an
   - `requests`
   - `lxml`
 
-Install them using:
+---
 
-```bash
+## Install them using:
+
 pip install beautifulsoup4 requests lxml
 
 ---
@@ -37,7 +38,6 @@ pip install beautifulsoup4 requests lxml
 
 Run the script and provide the booking.com search results URL and a file name to save the data.
 
-```bash
 python Bookingsdotcom.py
 
 You will be prompted to enter:
@@ -45,17 +45,26 @@ You will be prompted to enter:
 -The booking.com URL to scrape
 -The output CSV file name
 
+---
+
 ## 📁 Sample Output
+
 A sample output CSV file (db_hotels.csv) is included in this repository to show what the scraped data looks like.
 
-##🖥️ Sample Terminal Output
+## 🖥️ Sample Terminal Output
 
 Please enter url: https://www.booking.com/searchresults.html?...
+
 Please give file name: db_hotels
+
 Thank you for sharing the url and file name!
+
 ⏳
+
 Starting the webscrapping
+
 Connected to the website
+
 Web Scrapping done
 
 ## ⚠️ Important Notes
@@ -68,6 +77,18 @@ If this happens:
 Inspect the page using browser dev tools (Right Click > Inspect) to see if class names or tags have changed.
 
 Update the corresponding parts of the BeautifulSoup parsing logic in the script.
+
+---
+
+## File Structure
+
+booking-hotel-scraper/
+├── Bookingsdotcom.py         # Your main Python script
+├── db_hotels.csv             # Sample output CSV file
+├── README.md                 # Project documentation
+├── requirements.txt          # For installing dependencies
+└── .gitignore                # To ignore unnecessary files
+
 
 
 
